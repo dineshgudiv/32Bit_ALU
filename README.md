@@ -1,17 +1,13 @@
 # Exp-No:3 - 32 Bit ALU Design - Write Verilog Code and Verify the Functionality using Test-bench ( Using Frontend tool - nclaunch in cadence).
 
 # Aim: 
-
 Write a verilog code for 32 bit ALU supporting four logical and four arithmetic operations,use case statement and if statement for ALU behavioral modeling.
-
 To Verify the Functionality using Test Bench.
 
 # Tool Required:
-
 Functional Simulation: Incisive Simulator (ncvlog, ncelab, ncsim)
 
 ## Design Information and Bock Diagram:
-
 The ALU will take in two 32-bit values, and control line. An Arithmetic unit does the following task like addition subtraction, multiplication and logical operations. As the input is given in 32 bit we get 32 bit output. The arithmetic will show only one output at a time so a selector is necessary to select one of the operator.
 
 ![image](https://github.com/user-attachments/assets/e574788c-253f-46da-8468-298fe2844f7a)
@@ -19,15 +15,11 @@ The ALU will take in two 32-bit values, and control line. An Arithmetic unit doe
 ### Fig 1 : Block Diagram of 32 Bit ALU 
 
 ## Creating a Work space :
-
 Create a folder in your name (Note: Give folder name without any space) and Create a new sub-Directory name it as Exp3 or alu_32bit for the Design and open a terminal from the Sub-Directory.
 
 ## Creating Source Codes 
-
 In the Terminal, type gedit <filename>.v (ex: gedit alu_32bit.v). 
-
 A Blank Document opens up into which the following source code can be typed down. 
-
 (Note : File name should be with HDL Extension)
 
 ## a)To Verify the Functionality using Test Bench
