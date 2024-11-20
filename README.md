@@ -120,62 +120,32 @@ or
 
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
-
- 
- ![Screenshot 2024-11-17 075111](https://github.com/user-attachments/assets/855e8c80-1c87-40f7-b0c0-8f7369806438)
-
-
+![Screenshot 2024-11-17 075111](https://github.com/user-attachments/assets/855e8c80-1c87-40f7-b0c0-8f7369806438)
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure 
-
 Click the cds.lib file and save the file by clicking on Save option 
-
-
 ![Screenshot 2024-11-17 075128](https://github.com/user-attachments/assets/a20ab140-8904-4e38-b19b-c0724f9defe0)
-
 Save cds.lib file and select the correct option for cds.lib file format based on the HDL Language and Libraries used. 
-
 Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure .
-
 We are simulating verilog design without using any libraries 
-
 A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
-
 ![image](https://github.com/user-attachments/assets/d5202b97-ee5c-4e0e-9eaf-5f3fa733e546)
-
- ![Screenshot 2024-11-17 075206](https://github.com/user-attachments/assets/2629903f-9df6-444b-a9f7-4bca43d19bf9)
-
-
+![Screenshot 2024-11-17 075206](https://github.com/user-attachments/assets/2629903f-9df6-444b-a9f7-4bca43d19bf9)
 A ‘NCLaunch window’ appears as shown in figure below
-
 Left side you can see the HDL files. Right side of the window has worklib and snapshots directories listed. 
-
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation .
-
 To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
 ![Screenshot 2024-11-17 075229](https://github.com/user-attachments/assets/96a6433b-e75a-4b60-aaf5-08516d66081d)
-
- 
-
 ## Step 1: Compilation:
-
 – Process to check the correct Verilog language syntax and usage 
-
 Inputs: Supplied are Verilog design and test bench codes 
-
 Outputs: Compiled database created in mapped library if successful, generates report else error reported in log file 
 
 ## 	Steps for compilation: 
-
-1. Create work/library directory (most of the latest simulation tools creates automatically)
-   
-2. Map the work to library created (most of the latest simulation tools creates automatically)
-   
-3. Run the compile command with compile options
-   
+1. Create work/library directory (most of the latest simulation tools creates automatically)   
+2. Map the work to library created (most of the latest simulation tools creates automatically)   
+3. Run the compile command with compile options  
 i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v 
-
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
-
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
 ![Screenshot 2024-11-17 075335](https://github.com/user-attachments/assets/588dd6ea-db79-42d7-aee3-34d18c44f385)
 
@@ -226,16 +196,11 @@ Outputs: Simulation log file, waveforms for debugging
 Simulation allow to dump design and test bench signals into a waveform 
 
 Steps for simulation – Run the simulation command with simulator options
-
-
 ![Screenshot 2024-11-17 075335](https://github.com/user-attachments/assets/71931285-9d69-4dde-9e39-df39818053f9)
 
 
 ## Fig 10:Simulation Waveform Window
-
 ![Screenshot 2024-11-17 075402](https://github.com/user-attachments/assets/1081bc2f-af08-43c3-a1f3-5e6f4a524ab6)
-
-
 ![Screenshot 2024-11-17 075439](https://github.com/user-attachments/assets/684f7a14-2da1-473f-a897-f175e3c658e7)
 ### Result
 The functionality of a 32-bit ALU was successfully verified using a test bench and simulated with the nclaunch tool.
